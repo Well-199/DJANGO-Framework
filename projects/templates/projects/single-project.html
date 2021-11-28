@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% if project %}
+<h1>{{ project.title }}</h1>
+<br>
+<p>{{ project.description }}</p>
+{% else %}
+<h1>Não existe dados referente a sua busca</h1>
+{% endif %}
+
+{% endblock content %}
